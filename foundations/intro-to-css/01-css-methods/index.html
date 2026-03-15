@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Link is needed for External .css -->
     <link rel="stylesheet" href="01practice.css">
+    <!-- style is needed for Internal .css -->
+     <style>
+      p {
+        background-color: green;
+        color: white;
+        font-size: 18px;
+      }
+     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +19,6 @@
   <body>
     <div>Style me via the external method!</div>
     <p>I would like to be styled with the internal method, please.</p>
-    <button>Inline Method</button>
+    <button><div style="background-color: orange; font-size: 18px; color: black;">Inline Method</div></button>
   </body>
 </html>
