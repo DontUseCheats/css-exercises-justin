@@ -27,7 +27,6 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
-  margin: 10px;
 }
 
 button {
@@ -48,19 +47,28 @@ ul {
   list-style-type: none;
 }
 
-/*  */
+/* */
 
-.header {
+.header,
+.box1,
+.links,
+.box2 {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
-ul {
-  display: flex;
+.header {
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.links,
+.box2 {
   gap: 15px;
 }
 
-.right {
-  display: flex;
-  align-items: center;
+ul {
+  margin: 0;
+  padding: 20px;
 }
