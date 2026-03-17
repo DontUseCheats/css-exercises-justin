@@ -5,7 +5,7 @@ body {
 }
 
 .header {
-  height: 72px;
+  height: 50px;
   background: darkmagenta;
   color: white;
 }
@@ -17,7 +17,7 @@ body {
 }
 
 .sidebar {
-  width: 300px;
+  width: 200px;
   background: royalblue;
   box-sizing: border-box;
 }
@@ -26,4 +26,79 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+/*  */
+
+/* Header */
+
+.header {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  padding: 5px;
+}
+
+/*  */
+
+/* Sidebar */
+
+.sidebar {
+  display: flex;
+  box-sizing: border-box;
+  width: 350px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style-type: none;
+  padding: 10px;
+  margin: 0px;
+}
+
+
+/*  */
+
+/* Body */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sibling {
+  display: flex;
+  flex-grow: 1;
+}
+
+.box {
+  display: flex;
+  margin: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.card {
+  padding: 10px;
+  flex: 1 1 250px;
 }
